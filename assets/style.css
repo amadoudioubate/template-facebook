@@ -1,0 +1,106 @@
+/*------------------------------------------------------*/
+/*                       GENERAL                        */
+/*------------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+/********************************************************/
+/*                  BEGIN LOGIN                         */
+/********************************************************/
+
+.container-login {
+    display: grid;
+    grid-template-rows: 1fr 360px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "login-title" "login-form" "login-footer";
+    height: 100vh;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.login-title {
+   grid-area: login-title;
+   padding: 0 20px;
+}
+.login-title h1 {
+    font-size: 4rem;
+    color: #1877f2;
+    margin: 15px;
+}
+.login-title p {
+    font-size: 1.5rem;
+}
+.login-form {
+    grid-area: login-form;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+    min-width: 320px;
+ }
+ .login-form .form-row {
+    margin: 5px 0;
+ }
+
+ .login-form .form-row input {
+    height: 50px;
+    width: 95%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+ }
+
+ .login-form .form-btn .btn-login {
+    background-color: #1877f2;
+    color: #fff;
+    width: 95%;
+ }
+
+ .login-form p a {
+    color: #1877f2;
+ }
+
+ .login-form .form-divided {
+    border: 0.1px solid #808080;
+    width: 90%;
+    margin: 20px auto;
+ }
+
+ .login-form .form-btn .btn-register {
+    background-color: #42b72a;
+    color: #fff;
+ }
+
+
+ .login-footer {
+    grid-area: login-footer;
+    width: 320px;
+    margin: 0 auto;
+ }
+
+ .login-footer p a {
+    color: #000;
+    font-weight: 700;
+ }
+
+/********************************************************/
+/*                     END LOGIN                        */
+/********************************************************/
