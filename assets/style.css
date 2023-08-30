@@ -17,17 +17,19 @@ button {
     font-weight: 700;
     cursor: pointer;
 }
+
 a {
     text-decoration: none;
 }
 
-/********************************************************/
-/*                  BEGIN LOGIN                         */
-/********************************************************/
+/*********************************************************************************/
+/**                                  BEGIN LOGIN                                **/
+/*********************************************************************************/
 
+/*----------------------- BEGIN class container-login ------------------------*/
 .container-login {
     display: grid;
-    grid-template-rows: 1fr 360px 1fr;
+    grid-template-rows: 200px 360px 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "login-title" "login-form" "login-footer";
     height: 100vh;
@@ -35,18 +37,53 @@ a {
     text-align: center;
 }
 
+@media screen and (min-width: 900px) {
+    
+    .container-login {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 200px;
+        grid-template-areas: "login-title login-form" "none login-footer";
+        height: 75vh;
+        padding: 200px 50px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .container-login {
+        grid-template-columns: 600px 400px;
+        justify-content: center;
+        align-content: center;
+    }
+}
+/*----------------------- END class container-login ------------------------*/
+
+
+/*--------------------- BEGIN class login-title ------------------------*/
 .login-title {
    grid-area: login-title;
    padding: 0 20px;
 }
+*
 .login-title h1 {
     font-size: 4rem;
     color: #1877f2;
     margin: 15px;
 }
+
 .login-title p {
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 900px) {
+    
+    .login-title {
+        text-align: left;
+    }
+}
+/*----------------------- END class login-title ------------------------*/
+
+
+/*---------------------- BEGIN class login-form ----------------------*/
 .login-form {
     grid-area: login-form;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 20%);
@@ -55,6 +92,8 @@ a {
     max-width: 400px;
     min-width: 320px;
  }
+
+ 
  .login-form .form .form-row {
     margin: 5px 0;
  }
@@ -89,8 +128,17 @@ a {
     color: #fff;
  }
 
+ @media screen and (min-width: 900px) {
+    
+    .login-form {
+        padding: 0 0 30px 0;
+    }
+}
+/*---------------------- END class login-form ----------------------*/
 
- .login-footer {
+
+/*---------------------- BEGIN class login-footer ----------------------*/
+.login-footer {
     grid-area: login-footer;
     width: 320px;
     margin: 0 auto;
@@ -100,7 +148,8 @@ a {
     color: #000;
     font-weight: 700;
  }
+/*---------------------- END class login-footer ----------------------*/
 
-/********************************************************/
-/*                     END LOGIN                        */
-/********************************************************/
+/*********************************************************************************/
+/**                                  END LOGIN                                  **/
+/*********************************************************************************/
