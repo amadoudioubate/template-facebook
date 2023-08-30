@@ -55,11 +55,11 @@ a {
     max-width: 400px;
     min-width: 320px;
  }
- .login-form .form-row {
+ .login-form .form .form-row {
     margin: 5px 0;
  }
 
- .login-form .form-row input {
+ .login-form .form .form-row input {
     height: 50px;
     width: 95%;
     font-size: 1.2rem;
@@ -68,23 +68,23 @@ a {
     outline: none;
  }
 
- .login-form .form-btn .btn-login {
+ .login-form .form .form-btn .btn-login-submit {
     background-color: #1877f2;
     color: #fff;
     width: 95%;
  }
 
- .login-form p a {
+ .login-form .form .form-info-forgot-password a {
     color: #1877f2;
  }
 
- .login-form .form-divided {
+ .login-form .form .form-divided {
     border: 0.1px solid #808080;
     width: 90%;
     margin: 20px auto;
  }
 
- .login-form .form-btn .btn-register {
+ .login-form .form .form-btn .btn-login-create-account {
     background-color: #42b72a;
     color: #fff;
  }
